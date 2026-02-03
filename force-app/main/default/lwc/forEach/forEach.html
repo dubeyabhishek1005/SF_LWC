@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Product List" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <template for:each={products} for:item="product">
+                <div key={product.Id}>
+                    <p>Product Id: {product.Id}</p>
+                    <p>Product Name: {product.name}</p>
+                    <p>Product Price: {product.price}</p>
+                    <p>Product Quantity: {product.quantity}</p>
+
+                    <p><b>Product Total: ${product.total}</b></p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
