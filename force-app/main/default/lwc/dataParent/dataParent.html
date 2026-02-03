@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Parent Component">
+        <lightning-input label="Enter Name : " onchange={handleNameChange}></lightning-input>
+        <p>Name in Parent: {userName}</p>
+        <c-data-child name={userName}></c-data-child>
+    </lightning-card>
+</template>
