@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Multi Parent Multi Child" icon-name="custom:custom16">
+        <c-multi-child data={message}></c-multi-child>
+
+        <c-multi-child title="User Details" data={userData.name}></c-multi-child>
+        <c-multi-child title="Product Information" data={productData.name}></c-multi-child>
+    </lightning-card>
+</template>
