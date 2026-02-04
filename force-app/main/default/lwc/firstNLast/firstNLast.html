@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="First and Last" icon-name="custom:custom12">
+        <div class="slds-m-around_medium">
+            <template iterator:it={items}>
+                <div key={it.value.Id}>
+                    <template if:true={it.first}>
+                        <p><b>First Name: {it.value.name}</b></p>
+                    </template>
+                    <template if:true={it.last}>
+                        <p><b>Last Name: {it.value.name}</b></p>
+                    </template>
+                </div> 
+            </template>
+        </div>
+    </lightning-card>
+</template>
