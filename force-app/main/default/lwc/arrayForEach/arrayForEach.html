@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Array Methods" icon-name="custom:custom14">
+
+    <lightning-button label="Filter Items greater than 100" onclick={filterItems}></lightning-button>
+    <lightning-button label="Sort Items" onclick={sortItems}></lightning-button>
+    <lightning-button label="Reset Items" onclick={resetItems}></lightning-button>
+
+        <div class="slds-m-around_medium">
+            <template for:each={displayItems} for:item="item">
+                <div key={item.Id}>
+                    <p>Item Name: {item.name} </p>  
+                    <p>Item Value: {item.value} </p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
