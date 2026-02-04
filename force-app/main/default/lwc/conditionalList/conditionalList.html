@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Conditional List" icon-name="custom:custom11">  
+        <template if:true={items}>
+            <div class="slds-m-around_medium">
+                <template for:each={items} for:item="item">
+                    <div key={item.Id}>
+                        <template if:true={item.active}>
+                            <p>Item Name: {item.name} </p>
+                            <p><b>Item Status: {item.status} </b></p>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>
