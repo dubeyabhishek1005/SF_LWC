@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-box">
+        <h3>Data Sender Child</h3>
+            <lightning-input label="Name" onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Email" onchange={handleEmailChange}></lightning-input>
+            <lightning-button label="Send Data to Parent" onclick={sendData}></lightning-button>
+    </div>
+</template>
