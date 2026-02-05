@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Parent to Child with Reactive Property" icon-name="custom:custom10">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Enter Age : " onchange={handleAgeChange} type="number"></lightning-input>
+            <p><b>Age in Parent: {age}</b></p>
+            <p><b>Double Age in Parent: {doubleAge}</b></p>
+            <c-reactive-child counter-age={age}></c-reactive-child>
+        </div>
+    </lightning-card>
+</template> 
