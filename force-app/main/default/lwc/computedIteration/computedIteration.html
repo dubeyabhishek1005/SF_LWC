@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Computed Iteration" icon-name="custom:custom14">
+        <lightning-button label="Show Expensive/Normal Items" onclick={toggleItem}></lightning-button>
+        <template for:each={filteredItems} for:item="item">
+            <div key={item.Id}>
+                <p>Item Name: {item.name} </p>
+                <p>Item Price: {item.price} </p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
