@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-box">
+        <h2>Validation Parent</h2>
+        <c-validation-child onvalidationerror={handleError} ondatavalid={handleSuccess}></c-validation-child>
+        <template if:true={age}>
+            <div class="slds-text-color_success">
+                Valid data received: Age {age}, Email {email}
+            </div>
+        </template>
+        <template if:true={errorData}>
+            <div class="slds-text-color_error">
+                Error: {errorData}
+            </div>
+        </template>
+    </div>
+</template>

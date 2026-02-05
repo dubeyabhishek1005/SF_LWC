@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-box">
+        <h3>Validation Child</h3>
+        <lightning-input type="number" label="Age" value={age} onchange={handleAgeChange}></lightning-input>
+        <lightning-input type="email" label="Email" value={email} onchange={handleEmailChange}></lightning-input>
+        <lightning-button label="Validate & Submit" onclick={validateAndSubmit}></lightning-button>
+    </div>
+</template>
