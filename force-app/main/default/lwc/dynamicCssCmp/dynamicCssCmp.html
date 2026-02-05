@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Dynamic CSS" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <template for:each={tasks} for:item="task">
+                <div key={task.Id}>
+                    <div class={task.cssClass}>
+                        <p><b>Priority: {task.priority}</b></p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
