@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="ForEach with Event Handling" icon-name="custom:custom15">
+        <div class="slds-m-around_medium">
+            <template for:each={items} for:item="item">
+                <div key={item.Id}>
+                    <p>Item Name: {item.name} </p>
+                    <lightning-button label="Edit" data-id={item.id} onclick={handleEdit}></lightning-button>
+                    <lightning-button label="Delete" data-id={item.id} onclick={handleDelete}></lightning-button>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
