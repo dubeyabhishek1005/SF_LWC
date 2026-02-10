@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Multi-Level Parent-Child Communication">
+        <p>Grand Parent Component</p>
+        <lightning-input label="Family Name : " value={familyName} onchange={handleNameChange}></lightning-input>
+        <p>Grand Parent Family: {familyName}</p>
+        <c-parent-comp-lwc family-name={familyName} onfamilyupdate={handleFamilyUpdate}></c-parent-comp-lwc>
+    </lightning-card>
+</template>
